@@ -12,4 +12,5 @@ Prelude> myButLast ['a'..'z']
 -}
 
 myButLast :: [a] -> a
-myButLast = head . tail . reverse
+--myButLast = head . tail . reverse
+myButLast = last . init
